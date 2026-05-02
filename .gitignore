@@ -2,3 +2,5 @@ venv/
 __pycache__/
 *.pyc
 .env
+small_dataset/
+logs.txt

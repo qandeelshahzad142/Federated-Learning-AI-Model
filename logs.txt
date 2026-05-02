@@ -11,3 +11,19 @@ INFO:     Application startup complete.
 ERROR:    [Errno 10048] error while attempting to bind on address ('127.0.0.1', 5050): only one usage of each socket address (protocol/network address/port) is normally permitted
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
+Client 1 | Status: Started
+Client 2 | Status: Started
+Client 3 | Status: Started
+Client 1 | Status: Loaded global model
+Client 1 | Accuracy: 0.3500
+Client 1 | Loss: 0.7069
+Client 3 | Status: Loaded global model
+Client 3 | Accuracy: 0.4500
+Client 3 | Loss: 0.6998
+Client 2 | Status: Loaded global model
+Round 1 | Accuracy: 0.3500
+Server | Round 1 | Client 1 update received
+Client 1 | Status: Sent updated weights
+Round 2 | Accuracy: 0.4500
+Server | Round 2 | Client 3 update received
+Client 3 | Status: Sent updated weights
